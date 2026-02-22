@@ -12,4 +12,7 @@ RUN apt update && \
     update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 11 && \
     apt clean 
 
-RUN git clone https://gitlab.com/nsnam/ns-3-dev.git /ns3
+COPY ./protest/py-requirements.txt /py-requirements.txt
+RUN pip3 install -r /py-requirements.txt
+
+# RUN git clone https://gitlab.com/nsnam/ns-3-dev.git /ns3

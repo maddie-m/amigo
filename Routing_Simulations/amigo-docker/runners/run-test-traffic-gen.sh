@@ -16,7 +16,7 @@
 #################################################################
 
 cd /
-source amigo-env/bin/activate
+# source amigo-env/bin/activate
 cd /protest/traffic_models
 
 

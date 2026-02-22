@@ -1,0 +1,9 @@
+services:
+  amigo: 
+    build: ./Routing_Simulations/amigo-docker
+    container_name: amigo
+    volumes:
+      - ./Routing_Simulations/amigo-docker/protest:/protest
+      - ./Routing_Simulations/amigo-docker/runners:/runners
+      - ./Routing_Simulations/amigo-docker/entrypoint.sh:/bin/entrypoint
+      - ./Routing_Simulations/amigo-docker/ns3:/ns3

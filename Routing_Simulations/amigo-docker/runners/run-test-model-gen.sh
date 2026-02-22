@@ -24,7 +24,7 @@
 
 cd /
 
-source amigo-env/bin/activate
+# source amigo-env/bin/activate
 
 cd /protest/mobility_models
 

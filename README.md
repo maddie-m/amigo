@@ -1,3 +1,9 @@
+# Fork from Melissa Rand/Maddie Murakami
+
+1. `docker compose up -d` to create the container and initialize python packages
+2. `docker compose run amigo /runners/setup-ns3.sh` to set up ns-3 - takes awhile.
+3. Same as the above to run any other scripts that are in /runners.
+
 # Amigo: Secure Group Mesh Messaging in Realistic Protest Settings
 
 A project by [David Inyangson*](https://davidiny.github.io/), [Sarah Radway*](https://sites.harvard.edu/sarah-radway/), [Tushar Jois](https://tjo.is/), [Nelly Fazio](https://www.ccny.cuny.edu/profiles/nelly-fazio), and [James Mickens](https://mickens.seas.harvard.edu/).
