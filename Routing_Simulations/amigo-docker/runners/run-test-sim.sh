@@ -19,7 +19,8 @@
 # 
 #################################################################
 
-cd /ns3
+cd "$NS3_FOLDER"
+ns3=$(which ns3 || ./ns3)
 
 routing="dynamic"
 nodeCount=100
@@ -42,7 +43,7 @@ for mo in "${mobilityModels[@]}"; do
 
         echo "Starting job: $mo, iter=$iter (logging to $log_file)"
 
-        nohup ./ns3 run scratch/$routing-${buffSize} -- \
+        nohup $ns3 run scratch/$routing-${buffSize} -- \
             $nodeCount $trafficModel $mo $groupSize $iter \
             > "$log_file" 2>&1 &
 

@@ -1,5 +1,7 @@
 services:
   amigo: 
+    env_file:
+      - .envrc
     build: ./Routing_Simulations/amigo-docker
     container_name: amigo
     volumes:

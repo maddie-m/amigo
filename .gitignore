@@ -22,3 +22,4 @@ target
 session.vim
 .vscode/
 **/ns3/
+logs*/
